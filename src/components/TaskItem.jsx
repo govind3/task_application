@@ -5,7 +5,7 @@ const TaskItem = ({ task, toggleTaskStatus, deleteTask, setEditingTask }) => {
     <div
       className={`rounded-xl border  p-4 ${task.completed ? "border-success" : "border-yellow-600"}`}
     >
-      <div className="flex sm:flex-row flex-col gap-4 justify-between w-full">
+      <div className="flex flex-row flex-wrap  gap-4 justify-between w-full">
         <h3
           className={`font-semibold text-font text-lg ${task.completed ? "line-through opacity-60" : ""}`}
         >

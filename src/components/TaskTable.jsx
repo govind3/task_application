@@ -1,5 +1,6 @@
 import React from "react";
 import DescriptionCell from "./common/DescriptionCell";
+import TitleCell from "./common/TitleCell";
 
 const TaskTable = ({ tasks, toggleTaskStatus, deleteTask, setEditingTask }) => {
   return (
@@ -7,7 +8,7 @@ const TaskTable = ({ tasks, toggleTaskStatus, deleteTask, setEditingTask }) => {
       <table className="w-full border-collapse">
         <thead>
           <tr className="border-b text-left">
-            <th className="py-3 min-w-[180px]">Title</th>
+            <th className="py-3 max-w-[180px]">Title</th>
             <th className="py-3 max-w-[240px] pr-2">Description</th>
             <th className="py-3 min-w-[76px]">Priority</th>
             <th className="py-3 min-w-[110px]">Due date</th>
@@ -20,7 +21,7 @@ const TaskTable = ({ tasks, toggleTaskStatus, deleteTask, setEditingTask }) => {
           {tasks.length ? (
             tasks.map((task) => (
               <tr key={task.id} className="border-b ">
-                <td className="py-4">{task.title}</td>
+                <TitleCell title={task.title} />
                 <DescriptionCell description={task.description} />
                 <td className="py-4">{task.priority}</td>
                 <td className="py-4">{task.dueDate}</td>

@@ -1,16 +1,74 @@
-# React + Vite
+# Task management dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive Task management dashboard built using React and Tailwind CSS.
 
-Currently, two official plugins are available:
+This application helps users create, manage, update, and track daily tasks easily.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Create new tasks
+- Edit existing tasks
+- Delete tasks with confirmation
+- Mark tasks as Complete / Pending
+- Search tasks by title or description
+- Filter tasks by status and priority
+- List View and Card View toggle
+- Task count dashboard (Total, Pending, Completed)
+- Data saved in localStorage
+- Fully responsive design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React.js
+- Tailwind CSS
+- Formik
+- Yup
+- LocalStorage
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Setup instructions
+
+### 1. Clone the repository
+
+git clone https://github.com/govind3/licious_assignment.git
+
+### 2. Go to project folder
+
+cd licious_assignment
+
+### 3. Install dependencies
+
+npm install
+
+### 4. Start development server
+
+npm run dev
+
+### Live Demo
+
+https://licious-task.netlify.app/
+
+## Screenshots
+
+### Dashboard View
+
+![Dashboard View]()
+
+### Table View
+
+![Table View]()
+
+### Card View
+
+![Card View]()
+
+### Mobile Responsive View
+
+![Mobile View]()
+
+## Design decisions
+
+- Used Tailwind CSS for fast and clean UI development
+- Used Formik + Yup for form handling and validation
+- Used localStorage for data persistence after refresh
+- Added List and Card views for better user experience
+- Kept component structure clean and reusable
