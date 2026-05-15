@@ -29,11 +29,11 @@ This application helps users create, manage, update, and track daily tasks easil
 
 ### 1. Clone the repository
 
-git clone https://github.com/govind3/licious_assignment.git
+git clone https://github.com/govind3/task_application.git
 
 ### 2. Go to project folder
 
-cd licious_assignment
+cd task_application
 
 ### 3. Install dependencies
 
